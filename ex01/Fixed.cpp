@@ -48,7 +48,7 @@ Fixed::Fixed(const Fixed &copyFixed) : _fixedPointNumber() {
 }
 
 Fixed& Fixed::operator=(const Fixed &operatorFixed) {
-	std::cout << "Copy assign operator called" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	this->_fixedPointNumber = operatorFixed.getRawBits();
 	return *this;
 }
@@ -64,12 +64,12 @@ std::ostream& operator<< (std::ostream &out, const Fixed& fixed) {
 }
 
 int	Fixed::getRawBits() const {
-	std::cout << "getRawBits member function called" << std::endl;
+//	std::cout << "getRawBits member function called" << std::endl;
 	return this->_fixedPointNumber;
 }
 
 void Fixed::setRawBits(const int raw) {
-	std::cout << "setRawBits member function called" << std::endl;
+//	std::cout << "setRawBits member function called" << std::endl;
 	this->_fixedPointNumber = raw;
 }
 
