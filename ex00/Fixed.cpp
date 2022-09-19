@@ -16,7 +16,7 @@ Fixed::Fixed(const Fixed &copyFixed) : _fixedPointNumber() {
 }
 
 Fixed& Fixed::operator=(const Fixed &operatorFixed) {
-	std::cout << "Copy assign operator called" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	this->_fixedPointNumber = operatorFixed.getRawBits();
 	return *this;
 }
