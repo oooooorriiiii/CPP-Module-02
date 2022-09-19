@@ -21,11 +21,13 @@ int main( void ) {
 	// test
 	std::cout << "****************" << std::endl;
 	std::cout << "a is "<< a << std::endl;
-	std::cout << ++a << std::endl;
-	std::cout << --a << std::endl;
+	std::cout << "++a: " << ++a << std::endl;
 	std::cout << "a is "<< a << std::endl;
-	std::cout << a++ << std::endl;
-	std::cout << a-- << std::endl;
+	std::cout << "--a: " << --a << std::endl;
+	std::cout << "a is "<< a << std::endl;
+	std::cout << "a++: " << a++ << std::endl;
+	std::cout << "a is "<< a << std::endl;
+	std::cout << "a--: " << a-- << std::endl;
 	std::cout << "a is "<< a << std::endl;
 	std::cout << "****************" << std::endl;
 
@@ -39,25 +41,22 @@ int main( void ) {
 	std::cout << "****************" << std::endl;
 	std::cout << "a is " << a << std::endl;
 	std::cout << "b is " << b << std::endl;
-	std::cout  << a + b << std::endl;
-	std::cout  << a - b << std::endl;
-	std::cout  << a * b << std::endl;
-	std::cout  << a / b << std::endl;
+	std::cout  << "a + b: " << a + b << std::endl;
+	std::cout  << "a - b: " << a - b << std::endl;
+	std::cout  << "a * b: " << a * b << std::endl;
+	std::cout  << "a / b: " << a / b << std::endl;
 	std::cout << "****************" << std::endl;
 
 	std::cout << "****************" << std::endl;
 	std::cout << "a is " << a << std::endl;
 	std::cout << "b is " << b << std::endl;
-	std::cout  << (a > b)<< std::endl;
-	std::cout  << (a >= b) << std::endl;
-	std::cout  << (a < b)<< std::endl;
-	std::cout  << (a <= b) << std::endl;
-	std::cout  << (a == b) << std::endl;
-	std::cout  << (a != b) << std::endl;
+	std::cout << "a > b: " << (a > b)<< std::endl;
+	std::cout << "a >= b: " << (a >= b) << std::endl;
+	std::cout << "a < b: " << (a < b)<< std::endl;
+	std::cout << "a <= b: " << (a <= b) << std::endl;
+	std::cout << "a == b: " << (a == b) << std::endl;
+	std::cout << "a != b: " << (a != b) << std::endl;
 	std::cout << "****************" << std::endl;
-
-//	std::cout << "a is " << a << std::endl;
-//	std::cout << "b is " << b << std::endl;
 
 	return 0;
 
