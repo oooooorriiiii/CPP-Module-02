@@ -40,10 +40,10 @@ public:
 	bool	operator==(const Fixed &rightValue) const;
 	bool	operator!=(const Fixed &rightValue) const;
 
-	Fixed	operator+(const Fixed &rightValue);
-	Fixed	operator-(const Fixed &rightValue);
-	Fixed	operator*(const Fixed &rightValue);
-	Fixed	operator/(const Fixed &rightValue);
+	Fixed	operator+(const Fixed &rightValue) const;
+	Fixed	operator-(const Fixed &rightValue) const;
+	Fixed	operator*(const Fixed &rightValue) const;
+	Fixed	operator/(const Fixed &rightValue) const;
 
 	Fixed&	operator++();
 	Fixed&	operator--();
