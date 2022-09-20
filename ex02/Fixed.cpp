@@ -116,19 +116,19 @@ bool Fixed::operator!=(const Fixed& rightValue) const {
  * Arithmetic operators
  */
 
-Fixed	Fixed::operator+(const Fixed &rightValue) {
+Fixed	Fixed::operator+(const Fixed &rightValue) const {
 	Fixed	sum(*this);
 	sum.setRawBits(this->getRawBits() + rightValue.getRawBits());
 	return sum;
 }
 
-Fixed	Fixed::operator-(const Fixed &rightValue) {
+Fixed	Fixed::operator-(const Fixed &rightValue) const {
 	Fixed	difference(*this);
 	difference.setRawBits(this->getRawBits() - rightValue.getRawBits());
 	return difference;
 }
 
-Fixed	Fixed::operator*(const Fixed &rightValue) {
+Fixed	Fixed::operator*(const Fixed &rightValue) const {
 	Fixed	product(*this);
 	product.setRawBits(this->getRawBits() * rightValue.getRawBits() / (1 << _fractionalBit));
 	return product;
@@ -139,7 +139,7 @@ Fixed	Fixed::operator*(const Fixed &rightValue) {
  * @param rightValue
  * @return
  */
-Fixed	Fixed::operator/(const Fixed &rightValue) {
+Fixed	Fixed::operator/(const Fixed &rightValue) const {
 	Fixed	quotient(*this);
 	quotient.setRawBits(this->getRawBits() * (1 << _fractionalBit) / rightValue.getRawBits());
 	return quotient;
