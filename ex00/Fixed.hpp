@@ -23,10 +23,10 @@ public:
 	 * the raw value of the fixed-point value
 	 */
 	int		getRawBits() const;
+
 	/**
 	 *
 	 * @param raw
-	 *
 	 * sets the raw value of the fixed-point number
 	 */
 	void	setRawBits(int const raw);

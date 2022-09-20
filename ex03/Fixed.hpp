@@ -11,8 +11,8 @@
 class Fixed {
 public:
 	Fixed();
-	Fixed(int value);
-	Fixed(float value);
+	Fixed(const int value);
+	Fixed(const float value);
 	Fixed(const Fixed& copyFixed);
 	~Fixed();
 
